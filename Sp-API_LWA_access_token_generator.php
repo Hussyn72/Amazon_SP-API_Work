@@ -21,8 +21,8 @@ else
 //HAVE TO CHANGE CLIENT ID & CLIENT SECRET ON ROTATION DATE
 //Rotation Deadline : 2023-11-28T06:39:37.305Z 
 
-$client_id = "amzn1.application-oa2-client.281868543e99448bade39d6962b10745";
-
+$client_id = "YOUR ID HERE";
+//amzn1.application-oa2-client.281868543e99448bade39d6962b10745
 $Query = "SELECT value FROM config_values WHERE key = 'amazon_client_secret' AND name = 'Amazon'";
 file_put_contents('/tmp/Sp-API_LWA_access_token_generator.log', date("Y-m-d H:i:s") . ' - Query for getting Amazon client secret -> ' . $Query . PHP_EOL, FILE_APPEND);
 
