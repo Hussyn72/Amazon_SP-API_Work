@@ -30,8 +30,8 @@ file_put_contents($log_file, date("Y-m-d H:i:s") . '*********************' . 'ST
 
 
 //AWS Credentials
-$clientId = 'amzn1.application-oa2-client.281868543e99448bade39d6962b10745';
-
+$clientId = 'YOUR ID HERE';
+//amzn1.application-oa2-client.281868543e99448bade39d6962b10745
 //Getting Current Client Secret from DB
 $Query = "SELECT value FROM config_values WHERE key = 'amazon_client_secret' AND name = 'Amazon'";
 file_put_contents($log_file, date("Y-m-d H:i:s") . ' - Query for getting Amazon client secret -> ' . $Query . PHP_EOL, FILE_APPEND);
