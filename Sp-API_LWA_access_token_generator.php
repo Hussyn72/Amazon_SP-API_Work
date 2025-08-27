@@ -22,7 +22,6 @@ else
 //Rotation Deadline : 2023-11-28T06:39:37.305Z 
 
 $client_id = "YOUR ID HERE";
-//amzn1.application-oa2-client.281868543e99448bade39d6962b10745
 $Query = "SELECT value FROM config_values WHERE key = 'amazon_client_secret' AND name = 'Amazon'";
 file_put_contents('/tmp/Sp-API_LWA_access_token_generator.log', date("Y-m-d H:i:s") . ' - Query for getting Amazon client secret -> ' . $Query . PHP_EOL, FILE_APPEND);
 
@@ -44,7 +43,6 @@ $client_secret = $GetClientSecret[0]['value'];
 file_put_contents('/tmp/Sp-API_LWA_access_token_generator.log', date("Y-m-d H:i:s") . ' - client_secret -----------> ' . $client_secret . PHP_EOL, FILE_APPEND);
 
 //$client_secret = "Your Secret Here";
-//amzn1.oa2-cs.v1.00257ac3023a508a5e5793f2593f9b5187db405dceb1643b7e1bf51504d8c76e
 
 //Market Place of Sellers (For Refresh Token)
 $MarketPlace_of_Refresh_tokens = pg_query($DBConn,"select token,marketplace from sp_api_credentials where token_type='refresh_token'");
