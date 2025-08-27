@@ -87,4 +87,29 @@ REGION=your_region
 
 4️⃣ Run the Project
 php Sp-API_LWA_access_token_generator.php
+```
 
+📌 API Functionalities
+Feature	Endpoint / Job	Description
+Orders	/getOrders	Fetches latest Amazon orders
+Inventory	/checkInventory	Monitors stock levels
+Reports	/settlementReports	Downloads settlement reports
+Feedback	/requestFeedback	Sends automated feedback requests
+
+🔐 Security Notes
+
+Never commit your .env file or API credentials.
+
+Rotate credentials regularly in Amazon Developer Console.
+
+Use HTTPS for secure communication.
+
+📜 License
+
+This project is private and maintained for internal use only.
+
+👨‍💻 Author
+
+Mohd Hussain
+Full Stack Developer | API Integrations | Automation Specialist
+GitHub • LinkedIn
